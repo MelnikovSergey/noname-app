@@ -1,10 +1,13 @@
 <?php
 
-include 'config/db.php';
-include 'auth/login.php';
+define('ROOT', $_SERVER['DOCUMENT_ROOT']);
+
+include(ROOT  . '/config/config_functions.php');
+include(ROOT  . '/auth/login.php');
+
 
 echo '
-	<form action="login.php" method="POST" class="ui-form">
+	<form action="ROOT  . /auth/login.php" method="POST" class="ui-form">
 		<div class="ui-form__item">
 			<laber for="input_email">Email:</label>
 			<input type="text" name="email" placeholder="name@email.ru" id="input_email">
